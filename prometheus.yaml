@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Prometheus-deployment
+  name: prometheus-deployment
   labels:
-    app: Prometheus
+    app: prometheus
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: Prometheus
+      app: prometheus
   template:
     metadata:
       labels:
-        app: Prometheus
+        app: prometheus
     spec:
       containers:
-        - name: Prometheus-container
-          image: Prometheus-image:latest
+        - name: prometheus-container
+          image: prometheus-image:latest
           ports:
             - containerPort: 80
           env:
