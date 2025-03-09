@@ -18,7 +18,7 @@ spec:
       - name: docker-registry-secret
       containers:
       - name: prometheus
-        image: vikal190/prometheus:latest
+        image: vikal190/prometheus:2-24.04_stable
         ports:
         - containerPort: 9090
 ---
